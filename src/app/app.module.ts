@@ -4,7 +4,12 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { NextMeetingPage } from '../pages/nextmeeting/nextmeeting';
+import { ContactInfoPage } from '../pages/contact-info/contact-info';
+import { TakeUpARolePage } from '../pages/take-up-a-role/take-up-a-role';
+import { VotingPage } from '../pages/voting/voting';
+import { LoginPage } from '../pages/login/login';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +18,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    NextMeetingPage,
+    ContactInfoPage,
+    TakeUpARolePage,
+    VotingPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +32,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    NextMeetingPage,
+    ContactInfoPage,
+    TakeUpARolePage,
+    VotingPage,
+    LoginPage
   ],
   providers: [
     StatusBar,

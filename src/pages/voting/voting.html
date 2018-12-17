@@ -1,0 +1,35 @@
+<!--
+  Generated template for the VotingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Voting</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-item>
+    	<ion-label floating>Your name</ion-label>
+    	<ion-input type="text" value="" [(ngModel)]="name"></ion-input>
+  	</ion-item>
+
+  	<ion-card *ngFor="let item of items">
+		<ion-card-header>
+		  {{ item.description }}
+		</ion-card-header>
+
+		<ion-card-content>
+			<button ion-button (click)="itemTapped($event, item)"> Vote {{ item.order }} </button>
+		</ion-card-content>
+	</ion-card>
+</ion-content>
