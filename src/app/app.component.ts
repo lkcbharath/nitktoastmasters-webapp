@@ -6,9 +6,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { NextMeetingPage } from '../pages/nextmeeting/nextmeeting';
 import { ContactInfoPage } from '../pages/contact-info/contact-info';
-import { TakeUpARolePage } from '../pages/take-up-a-role/take-up-a-role';
+// import { TakeUpARolePage } from '../pages/take-up-a-role/take-up-a-role';
 import { VotingPage } from '../pages/voting/voting';
-import { LoginPage } from '../pages/login/login';
+// import { LoginPage } from '../pages/login/login';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,11 +26,11 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
+      { title: 'Voting', component: VotingPage },
       { title: 'Next Meeting Details', component: NextMeetingPage },
       { title: 'Contact Info', component: ContactInfoPage },
-      { title: 'Take Up A Role', component: TakeUpARolePage },
-      { title: 'Voting', component: VotingPage },
-      { title: 'Login', component: LoginPage },
+      // { title: 'Take Up A Role', component: TakeUpARolePage },
+      // { title: 'Login', component: LoginPage },
     ];
 
   }
